@@ -1,0 +1,24 @@
+{
+  "name": "PatientDataManagmentServer_MKhan",
+  "version": "3.0.0",
+  "description": "Final Server : MongoDB-Cloud : Patient data management",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt validate --verbose",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=4.1.1",
+    "npm": ">=2.1.x"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "=5.10.7",
+    "restify": "=8.5.1"
+  },
+  "author": "Muzzamil Khan",
+  "studentId": "301163748",
+  "private": "true",
+  "devDependencies": {},
+  "keywords": []
+}
