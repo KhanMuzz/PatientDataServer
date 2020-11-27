@@ -1,15 +1,14 @@
 /*
 Developer: Muzzamil Khan
 Course:    MAPD-713 Enterprise
-Desc:      Milestone 3, MongoDb Server, Local Implementation
+Desc:      Final PATIENT DATA MNGMNT SERVER DEPLOYED ON HEROKU
 App:       Paitent Data Management - Backend system
 COURSE PROFESSOR: MR . VICTOR ZAYTSEV
-GITHUB REPO ADD: https://github.com/KhanMuzz/MAPD713_EnterpriseTech.git
+GITHUB REPO ADD: https://github.com/KhanMuzz/PatientDataServer
 */
 
 //Required global variables for operations of this server
 var MY_MAIN_PORT = (process.env.PORT || 5000);
-//var MY_HOST_IP = '127.0.0.1';
 var SERVER_NAME = 'PATIENTS DATA MANAGMENT';
 
 //Libraries needed for use, http for req/resp calls and moongoose for DATABASE
@@ -76,11 +75,7 @@ const { type } = require('os');
 //Create my restify server and pass in name I gave
 myServer = restify.createServer({ name : SERVER_NAME});
 
-//Check if ip and port number was not found in environment vairables and assign default values
-// if(typeof ipAddress === "undefined"){
-//   console.warn('No process.env.IP var, using default: ' + MY_HOST_IP);
-// 		ipAddress = MY_HOST_IP;
-// };
+
 if (typeof port === "undefined") {
   console.warn('No process.env.PORT var, using default port: ' + MY_MAIN_PORT);
   port = MY_MAIN_PORT;
